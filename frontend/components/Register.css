@@ -1,0 +1,117 @@
+.main-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../Assests/image.png") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+.register_container {
+  color: white;
+  /* background: #307e97; */
+  background: transparent;
+  border: 1px solid;
+  backdrop-filter: brightness(0.3);
+  width: 450px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.register_container h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: math;
+  text-align: center;
+}
+.register_form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  /* border: solid; */
+}
+.register_input_box {
+  width: 100%;
+  position: relative;
+  height: 45px;
+  margin: 15px 0;
+  /* background: lightblue; */
+}
+.register_input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(226, 220, 220);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+  color: white;
+  font-size: 18px;
+}
+.register_input_box input::placeholder {
+  color: rgba(255, 255, 255, 0.733);
+}
+.register_input_box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+.register_button {
+  background: white;
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.register_login {
+  margin-top: 25px;
+  font-size: medium;
+}
+.register_login a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.register_login a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1025px) {
+  body {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    width: auto;
+  }
+  .register_container {
+    margin: 30px;
+  }
+  .register_container h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  body {
+    width: auto;
+  }
+  .register_container {
+    margin: 10px;
+    padding: 20px 10px;
+  }
+  .register_container h2{
+    font-size: 22px;
+  }
+}

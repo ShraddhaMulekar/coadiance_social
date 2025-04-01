@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Assests/image.png") no-repeat fixed;
+    background-size: cover;
+    background-position: center; */
+}
+root{
+    color: white;
+    background: #307e97;
+}

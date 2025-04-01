@@ -1,0 +1,1 @@
+export let base_URL = "https://coadiance-social-fztj.vercel.app/"

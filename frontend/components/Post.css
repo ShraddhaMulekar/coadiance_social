@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+.post-main-container {
+  /* background: rebeccapurple; */
+  /* border: solid red; */
+  width: 100%;
+  min-height: 100vh;
+}
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  /* background: mediumvioletred; */
+}
+.post-content-first {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 28%; */
+  gap: 60px;
+  width: 25%;
+  min-height: 100vh;
+  background: url("../Assests/img/image.png"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.generate-post,
+.generate-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 64px;
+  backdrop-filter: brightness(0.8);
+  background: transparent;
+  border: 1px solid #811f46;
+  border-radius: 8px;
+}
+.generatePost-link,
+.generateChat-link {
+  text-decoration: none;
+}
+.post-content-first h2 {
+  color: #811f46;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* show-post */
+
+.show-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 73%;
+  height: 100vh;
+  background: #f1eeee;
+  overflow: scroll;
+  scrollbar-width: none;
+  margin: 0 9px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-family: sans-serif;
+}
+.show-post-content {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+  margin: 15px;
+}
+.show-post-content div:first-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.img {
+  width: 60px;
+  height: 60px;
+}
+.allBtns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+}
+.btn {
+  width: 22px;
+  height: 22px;
+}
+
+.editDltBtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.update-content-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.update-title,
+.update-content {
+  padding: 3px;
+  font-family: sans-serif;
+  font-size: 17px;
+  background: transparent;
+}
+
+.update-button {
+  width: 50px;
+  border-radius: 20px;
+  padding: 5px;
+  background: #4a98d7;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: small;
+  margin: auto;
+}
+
+.head2,
+.head3 {
+  /* border: solid red; */
+  max-width: 300px;
+}
+
+nav {
+  padding: 0 10px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1025px) {
+  body {
+    width: 100%;
+  }
+  .show-post {
+    width: 70%;
+  }
+  .show-post-content {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  body {
+    width: 100%;
+  }
+  .show-post-content {
+    width: 60%;
+    /* border: solid green; */
+  }
+  .head2{
+    font-size: 20px;
+  }
+  .head3{
+    font-size: 15px;
+    text-align: center;
+  }
+}
